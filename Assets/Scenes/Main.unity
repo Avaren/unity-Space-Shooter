@@ -265,13 +265,39 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d9808401c68af274a8edfbed3d1b53c7, type: 3}
   m_RootGameObject: {fileID: 1835590815}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1118771666
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1118771667}
+  m_Layer: 0
+  m_Name: Shot Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1118771667
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1118771666}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1835590819}
 --- !u!1 &1308767646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1607,7 +1633,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!54 &1835590816
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1665,6 +1691,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1689442327}
+  - {fileID: 1118771667}
   m_Father: {fileID: 0}
 --- !u!64 &1835590820
 MeshCollider:
@@ -1697,6 +1724,9 @@ MonoBehaviour:
     xMax: 6
     zMin: -4
     zMax: 8
+  shot: {fileID: 100002, guid: 3f600bba2eb316d4b94aa4843432b45f, type: 2}
+  shotSpawn: {fileID: 1118771667}
+  fireRate: .25
 --- !u!1 &1904707383
 GameObject:
   m_ObjectHideFlags: 0
