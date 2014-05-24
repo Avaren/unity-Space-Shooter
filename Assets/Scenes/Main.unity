@@ -1600,6 +1600,7 @@ GameObject:
   - 23: {fileID: 1835590817}
   - 54: {fileID: 1835590816}
   - 64: {fileID: 1835590820}
+  - 114: {fileID: 1835590821}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1678,6 +1679,24 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 0
   m_Mesh: {fileID: 4300002, guid: 5282f20eba4d44213820e21af8481932, type: 3}
+--- !u!114 &1835590821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1835590815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34645711112399a40a9a99d105a1c049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  tilt: 4
+  boundary:
+    xMin: -6
+    xMax: 6
+    zMin: -4
+    zMax: 8
 --- !u!1 &1904707383
 GameObject:
   m_ObjectHideFlags: 0
